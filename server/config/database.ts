@@ -11,7 +11,7 @@ async function main() {
         await client.connect();
         await listDatabases(client);
         await listCollections(client);
-        await printDocuments(client); // Added this line to print documents
+        await printDocuments(client);
     } catch (e) {
         console.error(e);
     } finally {
@@ -41,7 +41,7 @@ async function listCollections(client) {
 }
 
 async function printDocuments(client) {
-    const collection = client.db('user').collection('login_info'); // Adjust to your actual database and collection names
+    const collection = client.db('user').collection('login_info');
 
     try {
         const documents = await collection.find().toArray();
