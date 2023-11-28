@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/SignIn.css';
 import axios from 'axios';
+import GoogleSignIn from "../components/GoogleSignIn";
 
 const SignIn = () => {
 
@@ -33,7 +34,7 @@ const SignIn = () => {
 
 
     return (
-        <div>
+        <div className="sign-in-div">
             <h1 className="sign-in-title">Sign In</h1>
             <div className="box-div">
                 <input className="input-box-username" type="text" placeholder="Username" />

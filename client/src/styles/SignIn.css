@@ -1,23 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .sign-in-title {
     color: aliceblue;
 }
-
 /* fix code below */
+
+.sign-in-div {
+    background-color: white, rgba(255,255,255,0);
+}
 
 .box-div {
     width: 230px;
-    background-color: #e0e0e0;
+    background-color: rgba(224, 224, 224, 0.8);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    height: 10vh;
+    height: 17vh;
+    opacity: 0.9;
   }
 
   .input-box-username {
@@ -35,9 +44,9 @@
   .sign-in-button {
     display: block;
     margin: 10px auto;
-    background-color: #090909;
+    background-color: #faf8f8;
     border: none;
-    color: red;
+    color: rgb(10, 10, 10);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
