@@ -1,5 +1,7 @@
 const { MongoClient } = require("mongodb");
 
+// FIXME clean up this file
+
 const uri =
   "mongodb+srv://mm0523:LARsim0gQouTQni7@cluster1.pnllkrl.mongodb.net/?retryWrites=true&w=majority";
 
