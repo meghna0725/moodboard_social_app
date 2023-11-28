@@ -1,7 +1,24 @@
 import React from "react";
 import '../styles/SignIn.css';
+import axios from 'axios';
 
 const SignIn = () => {
+
+    interface UserInfo {
+        username: string;
+        password: string;
+    }
+
+    // TODO make a post request to the server with the user info
+    const handleSignin = (user: UserInfo) => {
+        axios.post('/api/signin', user)
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err.response);
+            })
+    }
 
     // put username and password in a json object and console.log it
     const handleClick = () => {
